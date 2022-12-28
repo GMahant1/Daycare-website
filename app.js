@@ -5,8 +5,28 @@ const port = 8080; // Define our base URL as http:\\localhost:3000
 app.set("view engine", "ejs");
 
 
-app.get("/", (req, res) => {
-  res.send("Hello!");
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/choose", (req, res) => {
+  res.render("choose");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
+app.get("/index", (req, res) => {
+  res.render("index");
+});
+
+app.get("/services", (req, res) => {
+  res.render("services");
+});
+
+app.get("/team", (req, res) => {
+  res.render("team");
 });
 
 
